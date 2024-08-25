@@ -72,7 +72,7 @@ messages.append(
 
 # append the next user message to the messages list and call the client again
 while True:
-    print("\n")
+    print("\nIf you have any other questions, please type them here:\n")
     user_input = input()
     messages.append(
         {
