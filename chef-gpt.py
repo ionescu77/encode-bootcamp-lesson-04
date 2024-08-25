@@ -48,5 +48,52 @@ stream = client.chat.completions.create(
     messages=messages,
     stream=True,
 )
+
+"""
+You can extend the script to allow the user to continue the conversation after the first response
+- Before appending the next user message to the messages list, you should collect and append the last system message to the messages list on your script
+- You can then append the next user message to the messages list and call the client again
+- To stop the process you can use Ctrl+C on your terminal (or Cmd+C in MacOS)
+"""
+
+# collect and append the last system message to the messages list
+collected_messages = []
 for chunk in stream:
-    print(chunk.choices[0].delta.content or "", end="")
+    chunk_message = chunk.choices[0].delta.content or ""
+    print(chunk_message, end="")
+    collected_messages.append(chunk_message)
+
+messages.append(
+    {
+        "role": "system",
+        "content": "".join(collected_messages)
+    }
+)
+
+# append the next user message to the messages list and call the client again
+while True:
+    print("\n")
+    user_input = input()
+    messages.append(
+        {
+            "role": "user",
+            "content": user_input
+        }
+    )
+    stream = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        stream=True,
+    )
+    collected_messages = []
+    for chunk in stream:
+        chunk_message = chunk.choices[0].delta.content or ""
+        print(chunk_message, end="")
+        collected_messages.append(chunk_message)
+
+    messages.append(
+        {
+            "role": "system",
+            "content": "".join(collected_messages)
+        }
+    )
