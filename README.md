@@ -39,9 +39,9 @@ python test_openai-api.py
 
 To consolidate the knowledge acquired this week, students should complete the following project:
 
-- [ ] 1. Create a new GitHub repository for your project.
-- [ ] 2. Invite all members of your group to collaborate on the repository.
-- [ ] 3. Write a simple README.md file explaining your project
+- [x] 1. Create a new GitHub repository for your project.
+- [x] 2. Invite all members of your group to collaborate on the repository. (invited known github ID handles)
+- [x] 3. Write a simple README.md file explaining your project (ongoing)
 - [ ] 4. Modify and expand the `Chef GPT script` by incorporating a unique personality for your AI chef
 - [ ] 4.1.  - Tweak the system prompt to include a unique personality for your AI chef
    - Example personalities:
