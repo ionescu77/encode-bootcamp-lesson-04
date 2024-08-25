@@ -1,5 +1,40 @@
 # encode-bootcamp-lesson-04
 
+## About
+This repo contains code, related to the Weekend 1 Exercises.
+
+## How to use
+Please note the following how-to is specific to MacOS & Linux systems.
+
+To use the code:
+- clone this repository; into an empty folder run:
+```bash
+git clone git@github.com:ionescu77/encode-bootcamp-lesson-04.git
+```
+- create a python `venv` (virtual environment)
+```bash
+python3 -m venv venv
+```
+- install the requirements
+```bash
+pip install openai
+```
+- activate de `venv`
+```bash
+source venv/bin/activate
+```
+- make sure to export an ENV variable for API key (environment variable)
+```bash
+export OPENAI_API_KEY="--your-openai-api-key--here--"
+echo $OPENAI_API_KEY
+```
+- repo contains a `.gitignore` for the `venv` so you might [set the ENV variables in the virtual environment](https://stackoverflow.com/a/38645983/2861978)
+- run the code, for example:
+```bash
+python test_openai-api.py
+```
+
+  
 ## Weekend Project
 
 To consolidate the knowledge acquired this week, students should complete the following project:
