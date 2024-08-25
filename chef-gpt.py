@@ -49,9 +49,6 @@ stream = client.chat.completions.create(
     stream=True,
 )
 
-# for chunk in stream:
-#     print(chunk.choices[0].delta.content or "", end="")
-
 """
 You can extend the script to allow the user to continue the conversation after the first response
 - Before appending the next user message to the messages list, you should collect and append the last system message to the messages list on your script
