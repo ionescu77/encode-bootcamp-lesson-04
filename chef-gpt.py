@@ -25,7 +25,7 @@ Add another system instruction to guide on how to respond to the user's prompt
 messages.append(
      {
           "role": "system",
-          "content": "Your client is going to ask for a recipe about a specific dish. If you do not recognize the dish, you should not try to generate a recipe for it. Do not answer a recipe if you do not understand the name of the dish. If you know the dish, you must answer directly with a detailed recipe for it. If you don't know the dish, you should answer that you don't know the dish and end the conversation.",
+          "content": "Your client is going to ask for a recipe about a specific dish. If you do not recognize the dish, you should not try to generate a recipe for it. Do not answer a recipe if you do not understand the name of the dish. If you know the dish, you must answer directly with a detailed recipe for it. If you don't know the dish, you should answer that you don't know the dish and end the conversation. Please be concise, answer in max 100 words",
      }
 )
 
@@ -84,12 +84,12 @@ while True:
     print("\nIf you have any other questions, please type them here:\n")
     user_input = input()
     chef_personality = input("Choose your chef (1 for experienced chef, 2 for Italian pasta expert):\n")
-    
+
     if chef_personality == "1":
         personality = "experienced chef"
     else:
         personality = "Italian pasta expert"
-    
+
     messages.append(
         {
             "role": "user",
