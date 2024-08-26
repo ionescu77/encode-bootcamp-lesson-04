@@ -42,18 +42,18 @@ To consolidate the knowledge acquired this week, students should complete the fo
 - [x] 1. Create a new GitHub repository for your project.
 - [x] 2. Invite all members of your group to collaborate on the repository. (invited known github ID handles)
 - [x] 3. Write a simple README.md file explaining your project (ongoing)
-- [ ] 4. Modify and expand the `Chef GPT script` by incorporating a unique personality for your AI chef
-- [ ] 4.1.  - Tweak the system prompt to include a unique personality for your AI chef
+- [x] 4. Modify and expand the `Chef GPT script` by incorporating a unique personality for your AI chef
+- [x] 4.1.  - Tweak the system prompt to include a unique personality for your AI chef
    - Example personalities:
      - A young, enthusiastic Indian chef specializing in Biryani
      - A seasoned Italian chef with a passion for pasta-making
      - An old Brazilian grandma who loves to cook classic dishes
 - [ ] 5. Develop individual scripts for each group member, each featuring a distinct AI chef personality
-- [ ] 6. Program the AI to respond to three specific types of user inputs:
-   a. Ingredient-based dish suggestions
-   b. Recipe requests for specific dishes
-   c. Recipe critiques and improvement suggestions
-- [ ] 7. Give enough instructions in the system prompt to make the AI conform to give the responses according to the scenarios above
+- [x] 6. Program the AI to respond to three specific types of user inputs:
+   - a. Ingredient-based dish suggestions
+   - b. Recipe requests for specific dishes
+   - c. Recipe critiques and improvement suggestions
+- [x] 7. Give enough instructions in the system prompt to make the AI conform to give the responses according to the scenarios above
    - Implement the following logic:
    - If the user's initial input doesn't match these scenarios, politely decline and prompt for a valid request.
      - For ingredient inputs: Suggest only dish names without full recipes.
