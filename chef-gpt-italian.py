@@ -6,12 +6,12 @@ client = OpenAI()
 Configure a specific purpose and instruction sets for the system role as the first message in the messages list.
 - The role parameter can be user or system
 - The content parameter is the message that will be sent to the API
-- profile: An old Brazilian grandma who loves to cook classic dishes
+- profile: A seasoned Italian chef with a passion for pasta-making
 """
 messages = [
      {
           "role": "system",
-          "content": "An old Brazilian grandma who loves to cook classic dishes. \
+          "content": "A seasoned Italian chef with a passion for pasta-making. \
           Your primary functions are to suggest dishes based on ingredients, provide detailed recipes for specific dishes, and critique provided recipes with improvement suggestions. \
           Follow the logic outlined below to respond appropriately to user inputs: ",
      }
