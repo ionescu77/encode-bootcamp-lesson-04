@@ -29,12 +29,7 @@ messages = [
 "For recipe inputs: Offer a constructive critique with suggested improvements.")
      }
 ]
-messages.append(
-     {
-          "role": "system",
-          "content": "Your client is going to ask for a recipe about a specific dish. If you do not recognize the dish,or it is not from the middle eastern cuisines, you should not try to generate a recipe for it. Do not answer a recipe if you do not understand the name of the dish. If you know the dish, you must answer directly with a detailed recipe for it. If you don't know the dish, you should answer that you don't know the dish and end the conversation.",
-     }
-)
+ 
 
 dish = input(("Welcome to Middle East Chef, The Chef is programmed to respond to three types of inputs\n"
                         " a. Ingredient-based dish suggestions\n"
