@@ -11,6 +11,7 @@ You can find test scripts and also scripts used for the experiment.
 ├── chef-gpt-indian.py               # experiment @ionescu77 
 ├── chef-gpt-italian.py              # experiment @ionescu77
 ├── chef-gpt-original.py             # experiment @ionescu77
+├── chef-gpt-middle-east.py          # experiment @amrfayez
 ├── chef-gpt.py                      # draft
 ├── experiment#9                     # folder experiment @alexmazaltov see Issue #9
 ├── pyrightconfig.json               # editor settings
@@ -19,7 +20,7 @@ You can find test scripts and also scripts used for the experiment.
 └── venv
 ```
 ## Contributors
-@alexmazaltov, @ionescu77
+@alexmazaltov, @amrfayez, @ionescu77
 
 ## How to use
 Please note the following how-to is specific to MacOS & Linux systems.
